@@ -10,6 +10,8 @@ NSString *const MASPreferenceKeyConstantShortcutEnabled = @"MASDemoConstantShort
 
 @implementation AppDelegate {
     __weak id _constantShortcutMonitor;
+    __weak id _constantShortcutMonitor1;
+    __weak id _constantShortcutMonitor2;
 }
 
 @synthesize window = _window;
@@ -73,7 +75,7 @@ NSString *const MASPreferenceKeyConstantShortcutEnabled = @"MASDemoConstantShort
 {
     if (self.shortcutEnabled) {
         [MASShortcut registerGlobalShortcutWithUserDefaultsKey:MASPreferenceKeyShortcut handler:^{
-            [[NSAlert alertWithMessageText:NSLocalizedString(@"Global hotkey has been pressed.", @"Alert message for custom shortcut")
+            [[NSAlert alertWithMessageText:NSLocalizedString(@"Global hotkey has been pressed cestil.", @"Alert message for custom shortcut")
                              defaultButton:NSLocalizedString(@"OK", @"Default button for the alert on custom shortcut")
                            alternateButton:nil otherButton:nil informativeTextWithFormat:@""] runModal];
         }];
@@ -101,16 +103,44 @@ NSString *const MASPreferenceKeyConstantShortcutEnabled = @"MASDemoConstantShort
 - (void)resetConstantShortcutRegistration
 {
     if (self.constantShortcutEnabled) {
-        MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kVK_F2 modifierFlags:NSCommandKeyMask];
+        MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kVK_DownArrow modifierFlags:NSCommandKeyMask|NSAlternateKeyMask|NSControlKeyMask];
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"MoveFull" ofType:@"scpt"];
+        NSURL* url = [NSURL fileURLWithPath:path];NSDictionary* errors = [NSDictionary dictionary];
+        NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
         _constantShortcutMonitor = [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut handler:^{
-            [[NSAlert alertWithMessageText:NSLocalizedString(@"⌘F2 has been pressed.", @"Alert message for constant shortcut")
-                             defaultButton:NSLocalizedString(@"OK", @"Default button for the alert on constant shortcut")
-                           alternateButton:nil otherButton:nil informativeTextWithFormat:@""] runModal];
+            [appleScript executeAndReturnError:nil];
         }];
+        
+        MASShortcut *shortcut1 = [MASShortcut shortcutWithKeyCode:kVK_LeftArrow modifierFlags:NSCommandKeyMask|NSAlternateKeyMask|NSControlKeyMask];
+        NSString* path1 = [[NSBundle mainBundle] pathForResource:@"MoveLeft" ofType:@"scpt"];
+        NSURL* url1 = [NSURL fileURLWithPath:path1];NSDictionary* errors1 = [NSDictionary dictionary];
+        NSAppleScript* appleScript1 = [[NSAppleScript alloc] initWithContentsOfURL:url1 error:&errors1];
+        _constantShortcutMonitor1 = [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut1 handler:^{
+            [appleScript1 executeAndReturnError:nil];
+        }];
+        
+        MASShortcut *shortcut2 = [MASShortcut shortcutWithKeyCode:kVK_RightArrow modifierFlags:NSCommandKeyMask|NSAlternateKeyMask|NSControlKeyMask];
+        NSString* path2 = [[NSBundle mainBundle] pathForResource:@"MoveRight" ofType:@"scpt"];
+        NSURL* url2 = [NSURL fileURLWithPath:path2];NSDictionary* errors2 = [NSDictionary dictionary];
+        NSAppleScript* appleScript2 = [[NSAppleScript alloc] initWithContentsOfURL:url2 error:&errors2];
+        _constantShortcutMonitor2 = [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut2 handler:^{
+            [appleScript2 executeAndReturnError:nil];
+        }];
+        
     }
-    else {
-        [MASShortcut removeGlobalHotkeyMonitor:_constantShortcutMonitor];
-    }
+    //[appleScript release];
+    
+//    if (self.constantShortcutEnabled) {
+//        MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kVK_F2 modifierFlags:NSCommandKeyMask];
+//        _constantShortcutMonitor = [MASShortcut addGlobalHotkeyMonitorWithShortcut:shortcut handler:^{
+//            [[NSAlert alertWithMessageText:NSLocalizedString(@"⌘F2 has been pressed cestil marmule.", @"Alert message for constant shortcut")
+//                             defaultButton:NSLocalizedString(@"OK", @"Default button for the alert on constant shortcut")
+//                           alternateButton:nil otherButton:nil informativeTextWithFormat:@""] runModal];
+//        }];
+//    }
+//    else {
+//        [MASShortcut removeGlobalHotkeyMonitor:_constantShortcutMonitor];
+//    }
 }
 
 @end
