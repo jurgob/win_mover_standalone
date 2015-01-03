@@ -9,8 +9,11 @@ basically, you can move/resize your windows using your keyboard like this:
 without using any other external program
 
 the shortcuts are setted as:
+
 ctrl+alt+cmd+down-arrow-> full screen
+
 ctrl+alt+cmd+left-arrow -> move left
+
 ctrl+alt+cmd+right-arrow -> move right
 
 
