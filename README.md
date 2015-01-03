@@ -4,7 +4,7 @@ Stand Alone version of  [Win Mover](https://github.com/jurgob/win_mover).
 
 ##install
 
-download dmg image: [Win Mover DMG Download](https://github.com/jurgob/win_mover_standalone/blob/master/dist/WinMover.dmg?raw=true)
+download dmg image: [Win Mover DMG Download](https://github.com/jurgob/win_mover_standalone/releases/download/first/WinMover.dmg)
 
 open it and move the app on your Application folder, 
 
