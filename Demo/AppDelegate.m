@@ -3,6 +3,7 @@
 #import "MASShortcutView+UserDefaults.h"
 #import "MASShortcut+UserDefaults.h"
 #import "MASShortcut+Monitoring.h"
+#import "LaunchAtLoginController.h"
 
 NSString *const MASPreferenceKeyShortcut = @"MASDemoShortcut";
 NSString *const MASPreferenceKeyShortcutEnabled = @"MASDemoShortcutEnabled";
@@ -49,6 +50,10 @@ NSString *const MASPreferenceKeyConstantShortcutEnabled = @"MASDemoConstantShort
 
     // Activate the shortcut Command-F1 if it was enabled
     [self resetConstantShortcutRegistration];
+    
+    
+    LaunchAtLoginController *launchController = [[LaunchAtLoginController alloc] init];
+    [launchController setLaunchAtLogin:YES];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F03AEFB1A582B1B0080F4E2 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F03AEFA1A582B1B0080F4E2 /* LaunchAtLoginController.m */; };
 		9F716E3D1A5747B9009D0831 /* MoveLeft.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */; };
 		9F716E3F1A575044009D0831 /* MyAlert.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F716E3E1A575044009D0831 /* MyAlert.scpt */; };
 		9F920FEB1A575FB400C4CC21 /* MoveFull.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F920FEA1A575FB400C4CC21 /* MoveFull.scpt */; };
@@ -25,14 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoveLeft.scpt; sourceTree = "<group>"; };
+		9F03AEF91A582A970080F4E2 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		9F03AEFA1A582B1B0080F4E2 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MoveLeft.scpt; sourceTree = "<group>"; };
 		9F716E3E1A575044009D0831 /* MyAlert.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyAlert.scpt; sourceTree = "<group>"; };
 		9F920FEA1A575FB400C4CC21 /* MoveFull.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoveFull.scpt; sourceTree = "<group>"; };
 		9F920FEC1A575FF600C4CC21 /* MoveLeft.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoveLeft.scpt; sourceTree = "<group>"; };
 		9F920FEE1A57601E00C4CC21 /* MoveRight.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoveRight.scpt; sourceTree = "<group>"; };
 		D715192E1609CA1B005AAD95 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcut+Monitoring.h"; path = "MASShortcut/MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
 		D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcut+Monitoring.m"; path = "MASShortcut/MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
-		D7FB691E15A6E9FF00239C16 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB691E15A6E9FF00239C16 /* WinMover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinMover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FB692215A6E9FF00239C16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D7FB692515A6E9FF00239C16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D7FB692715A6E9FF00239C16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,7 +85,7 @@
 		D7FB691F15A6E9FF00239C16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7FB691E15A6E9FF00239C16 /* Demo.app */,
+				D7FB691E15A6E9FF00239C16 /* WinMover.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +136,8 @@
 		D7FB696015A6FE4900239C16 /* MASShortcut */ = {
 			isa = PBXGroup;
 			children = (
+				9F03AEFA1A582B1B0080F4E2 /* LaunchAtLoginController.m */,
+				9F03AEF91A582A970080F4E2 /* LaunchAtLoginController.h */,
 				D7FB695A15A6FE4500239C16 /* MASShortcut.h */,
 				D7FB695B15A6FE4500239C16 /* MASShortcut.m */,
 				D7FB695C15A6FE4500239C16 /* MASShortcutView.h */,
@@ -164,7 +169,7 @@
 			);
 			name = Demo;
 			productName = MASShortcutDemo;
-			productReference = D7FB691E15A6E9FF00239C16 /* Demo.app */;
+			productReference = D7FB691E15A6E9FF00239C16 /* WinMover.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -174,9 +179,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Vadim Shpakovski";
+				ORGANIZATIONNAME = "Jurgo Boemo";
 			};
-			buildConfigurationList = D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "WinMover" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7FB695215A6FC2A00239C16 /* AppDelegate.m in Sources */,
+				9F03AEFB1A582B1B0080F4E2 /* LaunchAtLoginController.m in Sources */,
 				D7FB695915A6FC3E00239C16 /* main.m in Sources */,
 				D7FB695E15A6FE4500239C16 /* MASShortcut.m in Sources */,
 				D7FB695F15A6FE4500239C16 /* MASShortcutView.m in Sources */,
@@ -283,7 +289,7 @@
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = Demo;
+				PRODUCT_NAME = WinMover;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -296,7 +302,7 @@
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = Demo;
+				PRODUCT_NAME = WinMover;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -304,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "Demo" */ = {
+		D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "WinMover" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7FB693A15A6E9FF00239C16 /* Debug */,
