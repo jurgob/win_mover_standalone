@@ -2,6 +2,12 @@
 
 Stand Alone version of  [Win Mover](https://github.com/jurgob/win_mover). 
 
+basically, you can move/resize your windows using your keyboard like this:
+
+![alt tag](https://raw.githubusercontent.com/jurgob/win_mover/master/readme_files/win_mover.gif)
+
+without using any other external program
+
 ##install
 
 download dmg image: [Win Mover DMG Download](https://github.com/jurgob/win_mover_standalone/releases/download/first/WinMover.dmg)
