@@ -19,7 +19,8 @@ ctrl+alt+cmd+right-arrow -> move right
 
 ##install
 
-download dmg image: [Win Mover DMG Download](https://github.com/jurgob/win_mover_standalone/releases/download/first/WinMover.dmg)
+download dmg image: [Win Mover DMG Download](https://github.com/jurgob/win_mover_standalone/releases/latest)
+
 
 open it and move the app on your Application folder, 
 
