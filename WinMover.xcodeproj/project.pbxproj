@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F03AEFB1A582B1B0080F4E2 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F03AEFA1A582B1B0080F4E2 /* LaunchAtLoginController.m */; };
-		9F716E3D1A5747B9009D0831 /* MoveLeft.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */; };
 		9F716E3F1A575044009D0831 /* MyAlert.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F716E3E1A575044009D0831 /* MyAlert.scpt */; };
 		9F920FEB1A575FB400C4CC21 /* MoveFull.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F920FEA1A575FB400C4CC21 /* MoveFull.scpt */; };
 		9F920FED1A575FF600C4CC21 /* MoveLeft.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9F920FEC1A575FF600C4CC21 /* MoveLeft.scpt */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		9F03AEF91A582A970080F4E2 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
 		9F03AEFA1A582B1B0080F4E2 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
-		9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MoveLeft.scpt; sourceTree = "<group>"; };
 		9F716E3E1A575044009D0831 /* MyAlert.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyAlert.scpt; sourceTree = "<group>"; };
 		9F920FEA1A575FB400C4CC21 /* MoveFull.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoveFull.scpt; sourceTree = "<group>"; };
 		9F920FEC1A575FF600C4CC21 /* MoveLeft.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoveLeft.scpt; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 		D7FB691315A6E9FF00239C16 = {
 			isa = PBXGroup;
 			children = (
-				9F716E3C1A5747B9009D0831 /* MoveLeft.scpt */,
 				D7FB696015A6FE4900239C16 /* MASShortcut */,
 				D7FB694715A6F61900239C16 /* Controllers */,
 				D7FB694815A6F62200239C16 /* XIBs */,
@@ -205,7 +202,6 @@
 			files = (
 				D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */,
 				9F920FED1A575FF600C4CC21 /* MoveLeft.scpt in Resources */,
-				9F716E3D1A5747B9009D0831 /* MoveLeft.scpt in Resources */,
 				9F920FEF1A57601E00C4CC21 /* MoveRight.scpt in Resources */,
 				9F716E3F1A575044009D0831 /* MyAlert.scpt in Resources */,
 				9F920FEB1A575FB400C4CC21 /* MoveFull.scpt in Resources */,
