@@ -1371,15 +1371,14 @@
 							<string key="NSFrame">{{18, 7}, {247, 68}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:526</string>
 							<string key="NSHuggingPriority">{251, 750}</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="881845896">
 								<int key="NSCellFlags">68157504</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string type="base64-UTF8" key="NSContents">RnVsbCBTY3JlZW46IGN0cmwrYWx0K2NtZCt1cHwKTW92ZSBMZWZ0OiBjdHJsK2FsdCtjbWQrbGVmdApN
-b3ZlIFJpZ2h0OiBjdHJsK2FsdCtjbWQrcmlnaHQKA</string>
+								<string type="base64-UTF8" key="NSContents">RnVsbCBTY3JlZW46IGN0cmwrYWx0K2NtZCtkb3duCk1vdmUgTGVmdDogY3RybCthbHQrY21kK2xlZnQK
+TW92ZSBSaWdodDogY3RybCthbHQrY21kK3JpZ2h0Cg</string>
 								<reference key="NSSupport" ref="576545628"/>
 								<string key="NSCellIdentifier">_NS:526</string>
 								<reference key="NSControlView" ref="588837989"/>
